@@ -1,7 +1,13 @@
 <h1>Welcome!</h1>
 <p> Go to <%= link_to 'Profile', user_path(id: current_user.id) %></p>
-<%= month_calendar do |date| %>
-  <%= date %>
+<%= month_calendar events: @concerts do |date, concerts| %>
+  <%= date.day %>
+
+  <% concerts.each do |concert| %>
+    <div>
+      <%= link_to concert.artist, concert_path(concert) %>
+    </div>
+  <% end %>
 <% end %>
-<p> Browse nearby concerts </p>
+<p><%= link_to "Browse", concerts_path %> nearby concerts </p>
 <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
