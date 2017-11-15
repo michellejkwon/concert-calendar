@@ -1,3 +1,4 @@
 <h1>Welcome!</h1>
 <p> Go to <%= link_to 'Profile', user_path(id: current_user.id) %></p>
 <p> Browse nearby concerts </p>
+<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>

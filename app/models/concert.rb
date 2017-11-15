@@ -15,4 +15,5 @@
 #
 
 class Concert < ApplicationRecord
+
 end
