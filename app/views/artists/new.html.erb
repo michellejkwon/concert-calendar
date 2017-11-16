@@ -1,0 +1,11 @@
+<h1>Add an Artist to Follow!</h1>
+<%= form_for @artist do |f| %>
+    <div class="field">
+        <%= f.label :name %><br />
+        <%= f.text_field :name, autofocus: true %>
+    </div>
+
+    <div class="actions">
+        <%= f.submit "Submit" %>
+    </div>
+<% end %>

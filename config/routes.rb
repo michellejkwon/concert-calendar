@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get "users/:id", to: "users#show", as: "user"
   resources :users
   resources :concerts
-
+  resources :artists
 end
