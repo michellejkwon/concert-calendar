@@ -1,3 +1,16 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+header {
+  padding: 180px 0 130px;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 180px 0 130px;
+  }
+}
+
+section {
+  padding: 120px 0;
+}
